@@ -1,3 +1,113 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -22,13 +132,13 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: May 12, 2026</p>
+    <p class="date">Last updated: August 30, 2026</p>
 
     <h2>1. Information We Collect</h2>
     <p>When you use Famca, we collect the following information:</p>
     <ul>
       <li><strong>Account Information:</strong> Email address, name, and profile photo</li>
-      <li><strong>Content:</strong> Photos, videos, and audio posts you upload to the app</li>
+      <li><strong>Content:</strong> Photos and videos you upload to the app, and the captions and comments you write</li>
       <li><strong>Usage Data:</strong> Device information (OS, app version), usage statistics</li>
       <li><strong>Push Notification Token:</strong> If you enable notifications, we store your device token to deliver them</li>
     </ul>
@@ -38,7 +148,7 @@
     <ul>
       <li>Provide and maintain the Famca service</li>
       <li>Authenticate your account and verify your identity</li>
-      <li>Enable sharing of photos, videos, and audio within your family groups</li>
+      <li>Enable sharing of photos and videos within your family groups</li>
       <li>Send you push notifications about new posts and activity (if enabled)</li>
       <li>Improve our app and user experience</li>
       <li>Ensure the security and integrity of our service</li>
@@ -47,9 +157,11 @@
     <h2>3. Data Sharing</h2>
     <p>We share your data with the following third-party service providers necessary to operate the app:</p>
     <ul>
-      <li><strong>Group Members:</strong> Photos, videos, audio, name, and profile photo are visible to members of your family groups</li>
-      <li><strong>Supabase:</strong> Database, authentication, and backend infrastructure (supabase.com)</li>
-      <li><strong>Cloudflare R2:</strong> Media file storage — photos, videos, and audio posts are stored on Cloudflare's infrastructure (cloudflare.com)</li>
+      <li><strong>Group Members:</strong> Photos, videos, captions, comments, name, and profile photo are visible to members of your family groups</li>
+      <li><strong>Google:</strong> Sign-in is handled through Google OAuth. Google receives your sign-in request and returns your email, name, and profile photo (google.com)</li>
+            <li><strong>Expo:</strong> Push notifications are delivered through Expo’s push service, which receives your device token and the notification text (expo.dev)</li>
+            <li><strong>Supabase:</strong> Database, authentication, and backend infrastructure (supabase.com)</li>
+      <li><strong>Cloudflare R2:</strong> Media file storage — photos and videos are stored on Cloudflare's infrastructure (cloudflare.com)</li>
       <li><strong>GIPHY:</strong> If you use the GIF feature, search queries are sent to GIPHY's API (giphy.com). GIPHY's privacy policy applies to this data</li>
       <li><strong>We NEVER sell your data to third parties or advertisers</strong></li>
     </ul>
@@ -77,7 +189,8 @@
     <h2>6. Data Retention</h2>
     <p>We retain your data as follows:</p>
     <ul>
-      <li><strong>Photos, videos, and audio posts:</strong> Stored until you delete the post or delete your account</li>
+      <li><strong>Photos and videos:</strong> Automatically and permanently deleted 24 hours after they are posted. You can also delete a post yourself at any time before then</li>
+            <li><strong>Captions and comments:</strong> Deleted together with the post they belong to</li>
       <li><strong>Account information:</strong> Kept until you permanently delete your account</li>
       <li><strong>Usage data:</strong> Retained for up to 90 days for analytics purposes</li>
       <li><strong>Push notification tokens:</strong> Retained while your account is active; deleted when you delete your account</li>
